@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm run *)",
+      "mcp__ide__getDiagnostics",
+      "Bash(pnpm install *)",
+      "Bash(pnpm exec *)",
+      "Bash(del prisma.config.ts)",
+      "WebSearch",
+      "Bash(grep -E \"^dotenv$\")",
+      "Bash(xargs grep *)",
+      "Bash(npx prisma *)",
+      "Read(//c/Users/anuj_chaudhary/Desktop/Node/**)",
+      "Read(//c/Users/anuj_chaudhary/Desktop/Node/notification-service/**)",
+      "Bash(npx tsc *)",
+      "Bash(xargs cat *)",
+      "Bash(git -C C:/Users/anuj_chaudhary/Desktop/Node/role-request-service log --oneline -5)",
+      "Bash(git -C C:/Users/anuj_chaudhary/Desktop/Node/role-service log --oneline -5)",
+      "Bash(git -C C:/Users/anuj_chaudhary/Desktop/Node/user-service log --oneline -5)",
+      "Bash(git -C \"C:/Users/anuj_chaudhary/Desktop/Node/user-service\" log --oneline -5)",
+      "Bash(node -e \"const p = require\\('/c/Users/anuj_chaudhary/Desktop/Node/role-request-service/package.json'\\); const deps = {...p.dependencies,...p.devDependencies}; ['joi','@nestjs/terminus','@nestjs/jwt'].forEach\\(d => console.log\\(d+':', deps[d] || 'NOT INSTALLED'\\)\\)\")",
+      "Bash(node -e \"const p = require\\('/c/Users/anuj_chaudhary/Desktop/Node/role-service/package.json'\\); const deps = {...p.dependencies,...p.devDependencies}; ['joi','@nestjs/terminus','@nestjs/jwt','passport','@nestjs/passport'].forEach\\(d => console.log\\(d+':', deps[d] || 'NOT INSTALLED'\\)\\)\")",
+      "Bash(node -e \"const p = require\\('/c/Users/anuj_chaudhary/Desktop/Node/user-service/package.json'\\); const deps = {...p.dependencies,...p.devDependencies}; ['joi','@nestjs/terminus','@nestjs/jwt'].forEach\\(d => console.log\\(d+':', deps[d] || 'NOT INSTALLED'\\)\\)\")",
+      "Bash(node -e \"const p = require\\('C:/Users/anuj_chaudhary/Desktop/Node/role-request-service/package.json'\\); const deps = {...p.dependencies,...p.devDependencies}; ['joi','@nestjs/terminus','@nestjs/jwt'].forEach\\(d => console.log\\(d+':', deps[d] || 'NOT INSTALLED'\\)\\)\")",
+      "Bash(node -e \"const p = require\\('C:/Users/anuj_chaudhary/Desktop/Node/role-service/package.json'\\); const deps = {...p.dependencies,...p.devDependencies}; ['joi','@nestjs/terminus','@nestjs/jwt'].forEach\\(d => console.log\\(d+':', deps[d] || 'NOT INSTALLED'\\)\\)\")",
+      "Bash(node -e \"const p = require\\('C:/Users/anuj_chaudhary/Desktop/Node/user-service/package.json'\\); const deps = {...p.dependencies,...p.devDependencies}; ['joi','@nestjs/terminus','@nestjs/jwt'].forEach\\(d => console.log\\(d+':', deps[d] || 'NOT INSTALLED'\\)\\)\")",
+      "Bash(node *)"
+    ]
+  }
+}
