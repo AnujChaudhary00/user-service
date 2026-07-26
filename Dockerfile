@@ -1,6 +1,6 @@
 # Stage 1 — build TypeScript
 FROM node:22-alpine AS builder
-RUN npm install -g pnpm
+RUN corepack enable && corepack prepare pnpm@9 --activate
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
@@ -9,7 +9,7 @@ RUN pnpm build
 
 # Stage 2 — production dependencies only
 FROM node:22-alpine AS prod-deps
-RUN npm install -g pnpm
+RUN corepack enable && corepack prepare pnpm@9 --activate
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile --prod
